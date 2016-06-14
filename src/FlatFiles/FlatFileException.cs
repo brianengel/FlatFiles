@@ -6,7 +6,6 @@ namespace FlatFiles
     /// <summary>
     /// Represents an error that occurred while parsing a stream.
     /// </summary>
-    [Serializable]
     public sealed class FlatFileException : Exception
     {
         /// <summary>

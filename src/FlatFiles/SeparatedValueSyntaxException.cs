@@ -5,7 +5,6 @@ namespace FlatFiles
     /// <summary>
     /// Represents an error that occurred while parsing a separated value stream.
     /// </summary>
-    [Serializable]
     public sealed class SeparatedValueSyntaxException : Exception
     {
         /// <summary>

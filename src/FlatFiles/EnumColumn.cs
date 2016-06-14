@@ -1,5 +1,6 @@
 ﻿using System;
 using FlatFiles.Properties;
+using System.Reflection;
 
 namespace FlatFiles
 {
@@ -20,7 +21,7 @@ namespace FlatFiles
         public EnumColumn(string columnName) 
             : base(columnName)
         {
-            if (!typeof(TEnum).IsEnum)
+            if (!typeof(TEnum).GetTypeInfo().IsEnum)
             {
                 throw new InvalidOperationException(Resources.NotEnumType);
             }

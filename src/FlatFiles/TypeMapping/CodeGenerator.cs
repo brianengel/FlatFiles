@@ -68,7 +68,7 @@ namespace FlatFiles.TypeMapping
                 generator.Emit(OpCodes.Ldarg_0);
                 generator.Emit(OpCodes.Callvirt, getter);
                 Type propertyType = mapping.Property.PropertyType;
-                if (!propertyType.IsClass)
+                if (!propertyType.GetTypeInfo().IsClass)
                 {
                     generator.Emit(OpCodes.Box, propertyType);
                 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if NET45
+using System;
 using System.Data;
 
 namespace FlatFiles
@@ -486,3 +487,4 @@ namespace FlatFiles
         }
     }
 }
+#endif

@@ -65,7 +65,7 @@ namespace FlatFiles
                 return NullHandler.GetNullRepresentation();
             }
             char actual = (char)value;
-            return actual.ToString(CultureInfo.CurrentCulture);
+            return actual.ToString();
         }
     }
 }
